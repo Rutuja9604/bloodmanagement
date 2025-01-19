@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website</title>
+    <style>
+        /* Add your styles for the navigation bar here */
+        
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        .menu-right {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        
+        li {
+            margin-right: 15px;
+        }
+        
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="menu-right">
+            <label class="logo"><h6>Raktarpan</h6></label>
+            <span id="menuIcon" onClick="toggleMenu()">&#9776;</span>
+            <ul id="menu">
+                <li><a class="active" href="index.php">Home</a></li>
+                <li><a href="contact.php">Contact Us</a></li>
+                <li><a href="AboutuUs.php" target="_parent">About us</a></li>
+                <li><a href="feedback.php" target="_parent">Feedback</a></li>
+                <!-- Display login link initially -->
+                <li id="loginLink"><a href="login.php" target="_parent">Login</a></li>
+                <!-- Display profile-related elements initially as hidden -->
+                <li id="profileName" style="display: none;"></li>
+                <li id="logoutLink" style="display: none;"><a href="#" onclick="logout()">Logout</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <script>
+        function toggleMenu() {
+            // Add your menu toggle logic here
+        }
+
+        function login() {
+            // Simulate login logic
+            // Show profile-related elements, hide login link
+            document.getElementById('loginLink').style.display = 'none';
+            document.getElementById('profileName').style.display = 'inline-block';
+            document.getElementById('logoutLink').style.display = 'inline-block';
+            // Set the profile name (replace with the actual user's name)
+            document.getElementById('profileName').textContent = 'John Doe';
+        }
+
+        function logout() {
+            // Simulate logout logic
+            // Hide profile-related elements, show login link
+            document.getElementById('loginLink').style.display = 'inline-block';
+            document.getElementById('profileName').style.display = 'none';
+            document.getElementById('logoutLink').style.display = 'none';
+        }
+    </script>
+    login();
+
+</body>
+
+</html>

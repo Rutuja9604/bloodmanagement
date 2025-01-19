@@ -1,0 +1,248 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image:linear-gradient(#fccaca,#501b1b);
+}
+.Container{
+    max-width: 650px;
+    padding: 20px;
+    margin: 0 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 15px 20px rgba(0,0,0,0.6);
+}
+h2{
+    font-size: 26px;
+    font-weight: bold;
+    text-align: left;
+    color: #fff;
+    padding-bottom: 8px;
+    border-bottom: 1px solid silver;
+    
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.input-box{
+    display: flex;
+    flex-wrap: wrap;
+    width:50%;
+    padding-bottom: 15px;
+}
+.input-box2{
+    display: flex;
+    flex-wrap: wrap;
+    width:100% !important;
+    padding-bottom: 15px;
+}
+
+.input-box:nth-child(2n){
+    justify-content: end;
+}
+.input-box label, .gender-title{
+    width: 95%;
+    color: #fff;
+    font-weight: bold;
+    margin: 5px 0;
+}
+.gender-title{
+    font-size: 16px;
+}
+.input-box select{
+    height: 40px;
+    width: 95%;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+.input-box input{
+    height: 40px;
+    width: 95%;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+.input-box input:is(:focus,:valid){
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+.gender-category label{
+    padding: 0 20px 0 5px;
+    font-size: 14px;
+}
+.gender-category{
+    color:gainsboro;
+}
+.gender-category label, .gender-category input{
+    cursor: pointer;
+}
+.alert p{
+    font-size: 14px;
+    font-style: italic;
+    color: #fff;
+    margin: 5px 0;
+    padding: 10px;
+    line-height:1.5;
+}
+.alert a{
+    font-weight:bold;
+    text-decoration: none;
+    color:skyblue; 
+}
+.alert a:hover{
+    font-weight: bold;
+    text-decoration: underline;
+    color: #9e2b4e;
+}
+.button-container{
+    margin: 15px 0;
+}
+.button-container button{
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    display: block;
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    background-image: linear-gradient(to right,#f09c9c,#f75b5b);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.button-container button:hover{
+    background-image: linear-gradient(to right, #f75b5b,#f09c9c);
+}
+.button-container a{
+    font-weight: bold;
+}
+@media(max-width:600px){
+    .Container{
+        min-width: 280px;
+    }
+    .content{
+        max-height: 380px;
+        overflow: auto;
+    }
+    .input-box{
+        margin-bottom: 12px;
+        width: 100%;
+    }
+    .input-box:nth-child(2n){
+        justify-content: space-between;
+    }
+    .gender-category{
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
+    }
+    .content::-webkit-scrollbar{
+        width: 0;
+    }
+    
+}
+
+nav{
+    position: absolute;
+    top: 15px;
+    right: 16px;
+}
+
+nav ul{
+    float:right;
+    margin-right:20px;
+    text-align:right;
+
+    }
+    
+nav ul li{
+    display:inline-block;
+    line-height:80px;
+    margin:0 5px;
+    }
+nav ul li a{
+    color:white;
+    font-size:17px;
+    padding: 7px  13px;
+    border-radius:3px;
+    text-transform:uppercase;
+    font-family:'kaushan script',cursive;
+    }
+a.active,a:hover{
+        background-color:#c52c2c;
+        transition:uppercase;
+        }
+.hover_ele2 a:hover{
+    background-color:#c52c2c;
+    transition:uppercase;
+    color:white;
+}
+.menu-right{
+        text-align:right;
+        }
+span{
+        margin:0 30px;
+        font-size:28px;
+        cursor:pointer;
+        display:none;
+        color:#fefefe;
+        text-align:right;
+        }
+       
+
+        @media only screen and (max-width: 700px){
+            span{
+                  display: block;
+            }
+            nav ul li{
+                         display:block;
+                         }
+            nav ul{
+                        display:none;
+            }
+            }
+            .preloader {
+              position: fixed;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+              background: #fff; /* You can customize the background color */
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              z-index: 1000;
+            }
+            
+            .preloader::after {
+              content: '';
+              width: 50px;
+              height: 50px;
+              border: 4px solid #3498db; /* You can customize the color */
+              border-radius: 50%;
+              border-top: 4px solid transparent;
+              animation: spin 1.5s linear infinite;
+            }
+            
+            @keyframes spin {
+              0% { transform: rotate(0deg); }
+              100% { transform: rotate(360deg); }
+            }
+            
+            /* Add this class to hide the preloader when the page is loaded */
+            .loaded .preloader {
+              display: none;
+            }

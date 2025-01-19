@@ -1,0 +1,264 @@
+*{
+    margin :0;
+    padding : 0;
+ }
+
+ html{
+    scroll-behavior: smooth;
+ }
+#banner{
+     background:  linear-gradient(rgba(0,0,0,0.3),#f89eb0), url(image/blood1.jpg);
+     background-size:cover;
+     background-position:center;
+     height:100vh;
+}
+.logo{
+width:80px;
+position:absolute;
+top: 0%;
+left: 1%;
+border-radius:50%;
+}
+
+
+label.logo{
+color:rgb(99, 17, 11);
+font-size:35px;
+line-height:80px;
+padding:0 100px;
+font-weight:bold;
+}
+
+
+nav ul{
+float:right;
+margin-right:20px;
+text-align:right;
+margin-top: 1%;
+font-family:'kaushan script',cursive;
+}
+nav ul li{
+display:inline-block;
+line-height:80px;
+margin:0 6px;
+}
+nav ul li a{
+color:white;
+font-size:17px;
+padding: 7px  13px;
+border-radius:3px;
+text-transform:uppercase;
+}
+a.active,a:hover{
+background-color:#c52c2c;
+transition:uppercase;
+}
+.menu-right{
+text-align:right;
+}
+span{
+margin:0 30px;
+font-size:28px;
+cursor:pointer;
+display:none;
+color:#fefefe;
+text-align:right;
+}
+@media only screen and (max-width: 700px){
+span{
+      display: block;
+}
+nav ul li{
+             display:block;
+             }
+nav ul{
+            display:none;
+}
+}
+.banner-text{
+color:#fff;
+padding-top:280px;
+text-align:center;
+
+}
+.banner-text h1{
+font-size:80px;
+font-family:'kaushan script',cursive;
+}
+.banner-text h2{
+font-size:20px;
+font-style:italic;
+
+}
+
+.banner-button{
+    margin:70px auto 0;
+    }
+    .banner-button a{
+    width:150px;
+    text-decoration:underline;
+    display:inline-block;
+    margin:0 10px;
+    padding:12px 0;
+    color:#fff;
+    border: .5px solid #fff;
+    position:relative;
+    z-index: 1;
+    transition:color 0.50s;
+    }
+    .banner-button a span{
+    width:0;
+    height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    background:#fff;
+    z-index: -1;
+    transition:0.20s;
+    }
+    .banner-button a:hover span{
+    width:100%;
+    }
+    .banner-button a:hover{ 
+    color: #fff;
+    } 
+    
+    
+
+
+
+   
+.sec-01{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 100px;
+    color: #fff;
+    background:  linear-gradient(rgba(0,0,0,0.3),#111222), url(image/blood5.jpg);
+    background-size:cover;
+    background-position:center;
+    height: 100vh;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.main-title{
+    font-size: 4em;
+    margin-bottom: 50px;
+
+}
+.content{
+    position:relative;
+    width: 1150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content .image{
+    position: relative;
+    width: 800px;
+    height: 400px;
+    overflow: hidden;
+}
+.content .image img{
+    z-index: 111;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.content .text-box{
+    z-index: 222;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    padding:40px;
+    max-width: 400px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transform: translate(-80px, 50px);
+}
+.content .text-box h3{
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.sec-02{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 100px;
+    color: #fff;
+    background:  linear-gradient(rgba(0,0,0,0.3),#f89eb0), url(image/blood8.jpg);
+    background-size:cover;
+    background-position:center;
+    height: 100vh;
+}
+.section-title{
+    font-size: 3em;
+    margin-bottom: 80px;
+}
+
+.info-title{
+    font-size: 1.8em;
+    margin-bottom: 10px;
+
+}
+.info{
+    width: 700px;
+    margin-left: 50px;
+}
+.sec-03{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 100px;
+    color: #fff;
+    background:  linear-gradient(rgba(0,0,0,0.3),#111222), url(image/blood2.jpg);
+    background-size:cover;
+     background-position:center;
+     height: 100vh;
+}
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff; /* You can customize the background color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.preloader::after {
+  content: '';
+  width: 50px;
+  height: 50px;
+  border: 4px solid #3498db; /* You can customize the color */
+  border-radius: 50%;
+  border-top: 4px solid transparent;
+  animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add this class to hide the preloader when the page is loaded */
+.loaded .preloader {
+  display: none;
+}
