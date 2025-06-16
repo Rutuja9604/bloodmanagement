@@ -42,12 +42,12 @@
     
                     <div class="input-box">
                         <label for="Age">Enter Your Age</label>
-                        <input type="number" placeholder="Enter Your Age" name="age" min="18" required>
+                        <input type="number" placeholder="Enter Your Age" name="age" required>
                     </div>
 
                     <div class="input-box">
                         <label for="weight">Enter Your weight</label>
-                        <input type="number" placeholder="Enter Your Weight" name="weight" min="50" required>
+                        <input type="number" placeholder="Enter Your Weight" name="weight" required>
                     </div>
     
                     <div class="input-box">

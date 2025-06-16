@@ -1,6 +1,3 @@
-<?php
-    session_start();
-?>
 <html lang="en">
 
 <head>
@@ -21,10 +18,6 @@
 
 </link>
 
-    <?php
-            require './component/navbar.php';
-        ?>
-
 
     <div class="contact-continer">
         <form style="margin: 20px;" action="https://api.web3forms.com/submit" method="POST" class="contact-left">
@@ -32,7 +25,7 @@
                 <h2> Get in touch </h2>
                 <hr>
             </div>
-            <input type="hidden" name="access_key" value="b3049847-9b6c-4407-ac13-227f8ee56496">
+            <input type="hidden" name="access_key" value="3f2e1908-17e7-4bf2-8508-3bb0e5c2d8b1">
             <input type="text" name="name" placeholder="Your Name" class="contact-inputs" required>
             <input type="email" name="email" placeholder="Your Email" class="contact-inputs" required>
             <textarea name="message" placeholder="Your Message" class="contact-inputs" required></textarea>
@@ -60,7 +53,6 @@
 
     <div class="preloader"></div>
 
-    <!-- Your page content goes here -->
 
     <script src="./js/script.js">
     </script>

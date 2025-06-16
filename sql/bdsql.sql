@@ -61,5 +61,5 @@ CREATE TABLE user_admin (
     password VARCHAR(255) NOT NULL
 );
 INSERT INTO `user_admin` (`id`, `username`, `password`) VALUES
-(111, 'admin', 'Admin@2024');
+(111, 'admin', 'Admin@2025');
 

@@ -113,7 +113,6 @@
                         <th>Email</th>
                         <th>Blood Group</th>
                         <th>Number of Units</th>
-                        <th>Submission time</th>
                         <th>Operation</th>
                     </tr>
                 </thead>
@@ -137,7 +136,6 @@
                         echo "<td>" . $row['email'] . "</td>";
                         echo "<td>" . $row['blood_group'] . "</td>";
                         echo "<td>" . $row['num_units'] . "</td>";
-                        echo "<td>" . $row['submission_time'] . "</td>";
                         echo "<td><button type='button' class='btn btn-danger' onclick='deleteRecord(" . $row['id'] . ")'>Delete</button></td>";
                         echo "</tr>";
                         $sr_no++;

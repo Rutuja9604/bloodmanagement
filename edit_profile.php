@@ -97,12 +97,12 @@
     
                     <div class="input-box">
                         <label for="Age">Enter Your Age</label>
-                        <input type="number" placeholder="Enter Your Age" name="age" min="18" required value = <?php echo $age; ?>>
+                        <input type="number" placeholder="Enter Your Age" name="age" required value = <?php echo $age; ?>>
                     </div>
 
                     <div class="input-box">
                         <label for="weight">Enter Your weight</label>
-                        <input type="number" placeholder="Enter Your Weight" name="weight" min="50" required value = <?php echo $weight; ?>>
+                        <input type="number" placeholder="Enter Your Weight" name="weight" required value = <?php echo $weight; ?>>
                     </div>
     
                     <div class="input-box">
